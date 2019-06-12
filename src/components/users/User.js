@@ -99,7 +99,7 @@ const User = ({ match }) => {
 						<div className="badge badge-primary">Followers: {followers}</div>
 						<div className="badge badge-light">Following: {following}</div>
 						<div className="badge badge-success">Public Repos: {public_repos}</div>
-						<div className="badge badge-dark">Public Gist {public_gist}</div>
+						<div className="badge badge-danger">Public Gist {public_gist}</div>
 					</div>
 					<Repos />
 				</Fragment>

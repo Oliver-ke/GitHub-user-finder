@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /* Global Styles */
-:root {
+/* :root {
 	--primary-color: #dc3545;
 	--dark-color: #333333;
 	--light-color: #f4f4f4;
 	--danger-color: #dc3545;
 	--success-color: #28a745;
+} */
+
+:root {
+	--primary-color: #24292E;
+	--dark-color: #3f4440;
+	--light-color: #f4f4f4;
+	--danger-color: #dc3545;
+	--success-color: #02C847;
 }
 
 * {
@@ -19,7 +27,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	line-height: 1.6;
-	background-color: #fff;
+	background-color: #FAFBFC;
 	color: #333;
 }
 
