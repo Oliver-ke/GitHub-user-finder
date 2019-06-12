@@ -1,13 +1,9 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
 import RepoItem from './RepoItem';
-import PropTypes from 'prop-types';
-
-const Repos = ({ repos }) => {
+import GithubContext from '../../context/gitHub/githubContext';
+const Repos = () => {
+	const { repos } = useContext(GithubContext);
 	return <Fragment>{repos.map((repo) => <RepoItem repo={repo} key={repo.id} />)}</Fragment>;
-};
-
-Repos.propTypes = {
-	repos: PropTypes.array.isRequired
 };
 
 export default Repos;
