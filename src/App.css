@@ -98,6 +98,14 @@ img {
 	text-align: center;
 }
 
+.spinner{
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	display: block;
+	margin-top: 20%;
+}
+
 .text-right {
 	text-align: right;
 }
@@ -408,6 +416,7 @@ table th {
 
 	.grid-3-2{
 		grid-template-columns: 1fr 1fr; 
+		grid-gap: 0.3rem;
 	}
 
 	/* Text Styles */
@@ -423,6 +432,12 @@ table th {
 		font-size: 1rem;
 	}
 
+	/* Spinner */
+	.spinner{
+		width: 80px;
+		height: 80px;
+	}
+
 	/* Navbar */
 	.navbar {
 		display: block;
@@ -432,5 +447,11 @@ table th {
 	.navbar ul {
 		text-align: center;
 		justify-content: center;
+	}
+}
+
+@media (max-width: 320px) {
+	.grid-3-2{
+		grid-template-columns: 1fr
 	}
 }
