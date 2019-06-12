@@ -18,16 +18,10 @@ const Users = () => {
 			{loading ? (
 				<Spinner />
 			) : (
-				<div style={usersStyle}>{users.map((user) => <UserItem key={user.id} user={user} />)}</div>
+				<div className="grid-3-2">{users.map((user) => <UserItem key={user.id} user={user} />)}</div>
 			)}
 		</Fragment>
 	);
-};
-
-const usersStyle = {
-	display: 'grid',
-	gridTemplateColumns: 'repeat(3, 1fr)',
-	gridGap: '1rem'
 };
 
 export default Users;

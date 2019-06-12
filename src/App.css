@@ -185,6 +185,10 @@ img {
 	margin: 3rem 0;
 }
 
+.my-3-2 {
+	margin: 3rem 0;
+}
+
 /* Grid */
 .grid-2 {
 	display: grid;
@@ -193,6 +197,12 @@ img {
 }
 
 .grid-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+
+.grid-3-2 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 1rem;
@@ -394,6 +404,10 @@ table th {
 	.grid-3,
 	.grid-4 {
 		grid-template-columns: 1fr;
+	}
+
+	.grid-3-2{
+		grid-template-columns: 1fr 1fr; 
 	}
 
 	/* Text Styles */
